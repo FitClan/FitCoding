@@ -39,11 +39,11 @@ class Book: NSObject, NSCoding {
     // MARK: NSCoding
     required convenience init?(coder aDecoder: NSCoder) {
         self.init()
-        setup(with: aDecoder)
+        setup(withDecoder: aDecoder)
     }
     
     func encode(with aCoder: NSCoder) {
-        encode(withCoder: aCoder)
+        setup(withCoder: aCoder)
     }
     
 }

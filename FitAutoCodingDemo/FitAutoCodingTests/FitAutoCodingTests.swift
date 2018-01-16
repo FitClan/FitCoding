@@ -33,13 +33,10 @@ class FitAutoCodingTests: XCTestCase {
             "pageCount" : 3,
             "available" : true,
             "categories":["one", "two"]
-            
             ] as [String : AnyObject]
+        
         let book = Book(dict: dic)
         
-        var pageCount: Int?
-        var categories: [String]?
-        var available: Bool?
         let data = NSKeyedArchiver.archivedData(withRootObject: book)
         UserDefaults.standard.set(data, forKey: "book")
         if let data = UserDefaults.standard.object(forKey: "book") as? NSData {
