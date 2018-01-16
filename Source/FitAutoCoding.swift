@@ -31,14 +31,14 @@ extension NSObject {
         return mi.children.first?.value
     }
     
-    public func setup(withDecoder decoder: NSCoder) {
+    public func setup(with aDecoder: NSCoder) {
         for (key, _) in codableProperties() {
-            let object = decoder.decodeObject(forKey: key)
+            let object = aDecoder.decodeObject(forKey: key)
             setValue(object, forKey: key)
         }
     }
     
-    public func encode(with aCoder: NSCoder) {
+    public func encode(withCoder: NSCoder) {
         for (key, value) in codableProperties() {
             switch value {
             case let property as AnyObject:

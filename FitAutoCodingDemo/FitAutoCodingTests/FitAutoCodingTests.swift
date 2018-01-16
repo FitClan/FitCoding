@@ -26,11 +26,30 @@ class FitAutoCodingTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func test() {
+        
+        let dic = [
+            "title" : "Hello World!",
+            "pageCount" : 3,
+            "available" : true,
+            "categories":["one", "two"]
+            
+            ] as [String : AnyObject]
+        let book = Book(dict: dic)
+        
+        var pageCount: Int?
+        var categories: [String]?
+        var available: Bool?
+        let data = NSKeyedArchiver.archivedData(withRootObject: book)
+        UserDefaults.standard.set(data, forKey: "book")
+        if let data = UserDefaults.standard.object(forKey: "book") as? NSData {
+            let book = NSKeyedUnarchiver.unarchiveObject(with: data as Data) as! Book
+            XCTAssertEqual(book.title!, "Hello World!")
+            XCTAssertEqual(book.pageCount!, 3)
+            XCTAssertEqual(book.categories!.count, 2)
+            XCTAssertNil(book.author)
         }
+        
     }
     
 }
