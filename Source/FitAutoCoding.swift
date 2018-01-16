@@ -38,7 +38,7 @@ extension NSObject {
         }
     }
     
-    public func encode(withCoder: NSCoder) {
+    public func encode(withCoder aCoder: NSCoder) {
         for (key, value) in codableProperties() {
             switch value {
             case let property as AnyObject:
