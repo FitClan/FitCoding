@@ -20,14 +20,9 @@
 //  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
-//
 
-#import <Foundation/Foundation.h>
+import PackageDescription
 
-//! Project version number for FitRefresh.
-FOUNDATION_EXPORT double FitAutoCodingVersionNumber;
-
-//! Project version string for FitRefresh.
-FOUNDATION_EXPORT const unsigned char FitAutoCodingVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <FitAutoCoding/PublicHeader.h>
+let package = Package(
+    name: "FitAutoCoding"
+)
