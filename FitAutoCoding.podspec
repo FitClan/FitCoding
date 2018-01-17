@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "FitAutoCoding"
-  s.version     = "0.1.1"
+  s.version     = "0.1.2"
   s.summary     = "AutoCoding by Swift4 support"
   s.platform    = :ios, "8.0"
   s.homepage    = "https://github.com/FitClan/FitAutoCoding"
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source   = { :git => "https://github.com/FitClan/FitAutoCoding.git", :tag => s.version }
-  s.source_files = ["Source/FitAutoCoding.h", "Source/FitAutoCoding.swift"]
+  s.source_files = ["Source/*.swift"]
   
   s.pod_target_xcconfig =  { 'SWIFT_VERSION' => '4.0' }
 end
