@@ -40,6 +40,7 @@
 		E73011A3200DF11300B43C68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E73011AD200DF19700B43C68 /* FitAutoCoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FitAutoCoding.swift; sourceTree = "<group>"; };
 		E73011AF200DF35800B43C68 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		E73011B1200F01D400B43C68 /* FitAutoCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FitAutoCoding.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		E73011AC200DF16C00B43C68 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				E73011B1200F01D400B43C68 /* FitAutoCoding.h */,
 				E73011AD200DF19700B43C68 /* FitAutoCoding.swift */,
 			);
 			name = Source;
