@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name        = "FitAutoCoding"
   s.version     = "0.1.0"
   s.summary     = "AutoCoding by Swift4 support"
-  s.platform     = :ios, "8.0"
+  s.platform    = :ios, "8.0"
   s.homepage    = "https://github.com/FitClan/FitAutoCoding"
   s.license     = { :type => "MIT" }
   s.authors     = { "Cyrill" => "lichunyang@outlook.com" }
