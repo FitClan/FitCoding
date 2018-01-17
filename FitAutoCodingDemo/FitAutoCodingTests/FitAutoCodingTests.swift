@@ -27,18 +27,29 @@ class FitAutoCodingTests: XCTestCase {
     }
     
     func test() {
-        
+
+        // init
+        // type1
         let dic = [
             "title" : "Hello World!",
             "pageCount" : 3,
             "available" : true,
-            "categories":["one", "two"]
+            "categories": ["one", "two"]
             ] as [String : AnyObject]
-        
+
         let book = Book(dict: dic)
+
+        // type2
+//        let book = Book()
+//        book.title = "Hello World!"
+//        book.pageCount = 3
+//        book.available = true
+//        book.categories = ["one", "two"]
+        
         
         let data = NSKeyedArchiver.archivedData(withRootObject: book)
         UserDefaults.standard.set(data, forKey: "book")
+        
         if let data = UserDefaults.standard.object(forKey: "book") as? NSData {
             let book = NSKeyedUnarchiver.unarchiveObject(with: data as Data) as! Book
             XCTAssertEqual(book.title!, "Hello World!")
