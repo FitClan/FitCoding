@@ -1,15 +1,15 @@
 //
-//  FitAutoCodingTests.swift
-//  FitAutoCodingTests
+//  FitCodingDemoTests.swift
+//  FitCodingDemoTests
 //
-//  Created by cyrill on 2018/1/16.
-//  Copyright © 2018年 cyrill.win. All rights reserved.
+//  Created by cyrill on 2017/12/16.
+//  Copyright © 2017年 cyrill.win. All rights reserved.
 //
 
 import XCTest
-@testable import FitAutoCoding
+@testable import FitCodingDemo
 
-class FitAutoCodingTests: XCTestCase {
+class FitCodingDemoTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

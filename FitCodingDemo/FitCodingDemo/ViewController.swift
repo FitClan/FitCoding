@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  FitAutoCoding
+//  FitCodingDemo
 //
-//  Created by cyrill on 2018/1/16.
-//  Copyright © 2018年 cyrill.win. All rights reserved.
+//  Created by cyrill on 2017/12/16.
+//  Copyright © 2017年 cyrill.win. All rights reserved.
 //
 
 import UIKit

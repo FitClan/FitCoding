@@ -1,5 +1,5 @@
 //
-//  FitAutoCoding
+//  FitCoding
 //
 //  Copyright (c) 2017-Present cyrill
 //
@@ -25,9 +25,9 @@
 #import <Foundation/Foundation.h>
 
 //! Project version number for FitRefresh.
-FOUNDATION_EXPORT double FitAutoCodingVersionNumber;
+FOUNDATION_EXPORT double FitCodingVersionNumber;
 
 //! Project version string for FitRefresh.
-FOUNDATION_EXPORT const unsigned char FitAutoCodingVersionString[];
+FOUNDATION_EXPORT const unsigned char FitCodingVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <FitAutoCoding/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <FitCoding/FitCoding.h>

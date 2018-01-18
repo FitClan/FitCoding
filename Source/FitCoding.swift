@@ -1,5 +1,5 @@
 //
-//  FitAutoCoding
+//  FitCoding
 //
 //  Copyright (c) 2017-Present cyrill
 //
