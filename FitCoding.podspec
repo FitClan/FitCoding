@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name        = "FitCoding"
-  s.version     = "0.1.3"
+  s.version     = "1.0.1"
   s.summary     = "AutoCoding by Swift4 support"
   s.platform    = :ios, "8.0"
   s.homepage    = "https://github.com/FitClan/FitCoding"
