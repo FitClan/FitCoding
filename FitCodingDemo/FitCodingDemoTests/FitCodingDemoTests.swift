@@ -56,6 +56,7 @@ class FitCodingDemoTests: XCTestCase {
             XCTAssertEqual(book.pageCount!, 3)
             XCTAssertEqual(book.categories!.count, 2)
             XCTAssertNil(book.author)
+            XCTAssertTrue(book.available)
         }
         
     }

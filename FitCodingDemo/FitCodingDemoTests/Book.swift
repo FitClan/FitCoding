@@ -15,7 +15,7 @@ class Book: NSObject, NSCoding {
     var author: String?
     var pageCount: NSNumber?
     var categories: [String]?
-    var available: NSNumber?
+    var available: Bool = false
     
     init(dict: [String: AnyObject]) {
         super.init()
